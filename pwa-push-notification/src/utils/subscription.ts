@@ -29,7 +29,7 @@ export const subscribeUser = async () => {
 
 const sendSubscriptionToServer = async (subscription: PushSubscriptionJSON) => {
   console.log("Sending subscription to server:", subscription);
-  const response = await fetch(`https://192.168.80.30:8080/subscribe`, {
+  const response = await fetch(`${process.env.PUBLIC_URL}/subscribe`, {
     method: "POST",
     body: JSON.stringify(subscription),
     headers: {

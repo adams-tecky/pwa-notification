@@ -6,6 +6,10 @@ Since IOS Push Notifictions only works under HTTPS. We need to setup https for l
 
 For convenience, in this demo we shall serve the react app through server.
 
+Check your `IP` on router's network.For example mine is `192.168.80.30` You will need it to access server on your phone.
+
+REMEMBER to update `PUBLIC_URL` in `.env` of react app to be `IP`.
+
 ```cmd
 cd pwa-push-notification
 yarn install
@@ -33,15 +37,13 @@ yarn install
 yarn start
 ```
 
-Check your `IP` on router's network.For example mine is `192.168.80.30` You will need it to access server on your phone.
-
 ## Install self sign certificate on your iPhone
 
 Let's download self signed certificate to phone by accessing the `IP` : `https://192.168.80.30:8080/cert.pem`.
 
 Safari will open the iOS Setting up and offer you to install the certificate as a Profile.
 
-Then instruct iOS to fully trust the installed root certificate. For this, open again the iOS Settings app. Then navigate to “General” > “About” > “Certificate Trust Settings”. In the section “Enable Full Trust for Root Certificates”, enable your root certificate.
+Then instruct iOS to fully trust the installed root certificate. For this, open again the iOS Settings app. Then navigate to “General” > “VPN & Device Management” .In the section “Enable Full Trust for Root Certificates”, enable your root certificate.
 
 ## Test out the push notification function
 
