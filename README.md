@@ -37,7 +37,7 @@ Check your `IP` on router's network.For example mine is `192.168.80.30` You will
 
 ## Install self sign certificate on your iPhone
 
-Let's download self signed certificate to phone by accessing the `IP` : `https://192.168.80.30/cert.pem`.
+Let's download self signed certificate to phone by accessing the `IP` : `https://192.168.80.30:8080/cert.pem`.
 
 Safari will open the iOS Setting up and offer you to install the certificate as a Profile.
 
@@ -45,8 +45,8 @@ Then instruct iOS to fully trust the installed root certificate. For this, open 
 
 ## Test out the push notification function
 
-Go to the `IP` : `https://192.168.80.30/` directly, you should be able to view the site.
+Go to the `IP` : `https://192.168.80.30:8080/` directly, you should be able to view the site.
 
 Click `Enable Notifications` and press allow all.
 
-Using Insomina to send a **POST** request to `IP` : `https://192.168.80.30/sendNotification` to trigger server sending a push notifications
+Using Insomina to send a **POST** request to `IP` : `https://192.168.80.30:8080/sendNotification` to trigger server sending a push notifications
