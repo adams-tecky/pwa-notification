@@ -45,7 +45,7 @@ Then instruct iOS to fully trust the installed root certificate. For this, open 
 
 ## Test out the push notification function
 
-Go to the `IP` : `https://192.168.80.30:8080/` directly, you should be able to view the site.
+Make sure your phone is connect to same wifi as your computer.Go to the `IP` : `https://192.168.80.30:8080/` directly, you should be able to view the site.
 
 Click `Enable Notifications` and press allow all.
 
